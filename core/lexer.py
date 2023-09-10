@@ -7,4 +7,4 @@ def lex(by: bytes):
     return fil
 
 if __name__ == "__main__":
-    print(lex(b"\x55\x13\x00\x55"))
+    print(lex(b"\x01lol\x00\x04"))
