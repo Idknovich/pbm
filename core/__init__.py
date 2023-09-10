@@ -1,1 +1,1 @@
-from mng import *
+from .mng import *
