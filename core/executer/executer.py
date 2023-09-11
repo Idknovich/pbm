@@ -7,17 +7,35 @@ def execute(byte_code, debug=False):
     reg2=""
     reg3=""
     #
+    steps=""
+    
     c=getb()
     byte_code=lex(byte_code)
     codee=""""""
     
     for i in byte_code:#translate
-        arg=i["params"].decode("utf-8")
         com=c.get(i["com"])
+        if i["com"]=="0xff":
+            steps=steps[:-1]
+            continue
+        
+        arg=i["params"].decode("utf-8")
+
+
+        if i["com"]=="0x8":
+            
+            if not arg[0]==b"\x01":
+                thing=com.replace("arg", "not")
+                
+            codee+=steps+thing+"\n"
+            steps+=" "
+            continue
+        
         thing=com.replace("arg", "'"+arg+"'")
-        codee+=thing+"\n"
+        codee+=steps+thing+"\n"
 
     if debug:
         print(codee)
         print("")
+    
     exec(codee)
