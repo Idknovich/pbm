@@ -16,8 +16,8 @@
 
 ## Авторы
 
-- Idknovich (Дима Романов)
-
+- Idknovich (Дима Романов)- Создатель/Программист
+- ChatGPT(GPT-3.5, OpenAI)- Помог с README и совсем немного с пайтон
 
 
 Если вы используете PBM где-либо, я буду рад этому.
@@ -38,8 +38,8 @@ See the *DOCS* file for guide.
 
 ## Authors
 
-- Idknovich (Dima Romanov)
-
+- Idknovich (Dima Romanov)- Creator/Programmer
+- ChatGPT (GPT-3.5, OpenAI) - Assisted with the README and provided minor assistance with Python
 
 
 If you use PBM anywhere, I would be glad to know.
