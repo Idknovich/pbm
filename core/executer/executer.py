@@ -12,15 +12,15 @@ def execute(byte_code, debug=False):
     c=getb()
     byte_code=lex(byte_code)
     codee=""""""
-    
+   
     for i in byte_code:#translate
-        com=c.get(i["com"])
+        com=c[i["com"]]
         if i["com"]=="0xff":
             steps=steps[:-1]
             continue
         
         arg=i["params"].decode("utf-8")
-
+        print(arg)
 
         if i["com"]=="0x8":
             
@@ -30,8 +30,14 @@ def execute(byte_code, debug=False):
             codee+=steps+thing+"\n"
             steps+=" "
             continue
+
+        if i["com"]=="0x9":
+            com=com.replace("arg", arg)
+            codee+=steps+com+"\n"
+            continue
         
-        thing=com.replace("arg", "'"+arg+"'")
+
+        thing=com.replace("aarg", '"'+arg+'"')
         codee+=steps+thing+"\n"
 
     if debug:
