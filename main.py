@@ -3,9 +3,9 @@ try:
 except:
     from .core import execute
     
-def execute(byte):
-    core.execute(byte)
+def execute(byte, debug=False):
+    core.execute(byte, debug)
 
 if __name__=="__main__":
-    program=b"\x01ura\x00\x04"
-    execute(program)
+    program=b"\x015\x00\x025\x00\x07\x00\x04"
+    execute(program, True)

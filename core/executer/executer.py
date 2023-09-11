@@ -1,7 +1,7 @@
 from ..lexer import lex
 from .coms import *
 
-def execute(byte_code):
+def execute(byte_code, debug=False):
     #setup
     reg1=""
     reg2=""
@@ -16,5 +16,8 @@ def execute(byte_code):
         com=c.get(i["com"])
         thing=com.replace("arg", "'"+arg+"'")
         codee+=thing+"\n"
-        
+
+    if debug:
+        print(codee)
+        print("")
     exec(codee)

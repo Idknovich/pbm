@@ -1,6 +1,6 @@
 listt={
     "bytes":{
-	"0x1":"reg1=arg;print(reg1)",
+	"0x1":"reg1=arg",
 	"0x2":"reg2=arg",
 	"0x3":"reg3=arg",
         "0x4":"print(reg1)",
