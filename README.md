@@ -8,7 +8,7 @@
 
 ## Зачем?
 
-Изначально автор хотел создать язык программирования, но решил создать виртуальную машину, на основе которой можно создать свой язык и не только.
+Почемк бы и нет?
 
 ## Как использовать?
 
@@ -30,7 +30,7 @@
 
 ## Why?
 
-Originally, the author wanted to create a programming language, but decided to build a virtual machine that can serve as a foundation for creating custom languages and more.
+Why not?
 
 ## How to Use
 
