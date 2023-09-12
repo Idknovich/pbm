@@ -9,7 +9,7 @@ listt={
         "0x5":"print(str(reg1)+str(reg2))",
         "0x6":'exec(f"reg{str(arg)[0]}=reg{str(arg)[1]}")',
         
-        "0x7":"reg1=int(reg1)+int(reg2)",
+        "0x7":"reg1=eval('int(reg1)argint(reg2)')",
         "0x8":"if arg str(reg2)==str(reg3):",
         
         "0x9":"PBM_arg=\"\"",
