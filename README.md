@@ -12,7 +12,7 @@
 
 ## Как использовать?
 
-Смотрите файл *DOCS* для гайда
+Смотрите файл [*DOCS*](DOCS.md) для гайда
 
 ## Авторы
 
@@ -34,7 +34,7 @@ Originally, the author wanted to create a programming language, but decided to b
 
 ## How to Use
 
-See the *DOCS* file for guide.
+See the [*DOCS*](DOCS.md) file for guide.
 
 ## Authors
 
