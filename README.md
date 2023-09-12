@@ -1,7 +1,7 @@
 
 
 
-![Very cool PBM symbols](https://i.postimg.cc/wTrJvryY/36-20230911025638.png)
+![Very cool PBM symbols](https://postimg.cc/xJy3jwY1)
 # PBM (PyByteMachine)
 
 **PBM (PyByteMachine)** - это виртуальная машина для выполнения PBM байт-кода. В данный момент она находится в ранней стадии разработки.
