@@ -20,7 +20,6 @@ def execute(byte_code, debug=False):
             continue
         
         arg=i["params"].decode("utf-8")
-        print(arg)
 
         if i["com"]=="0x8":
             
@@ -31,13 +30,9 @@ def execute(byte_code, debug=False):
             steps+=" "
             continue
 
-        if i["com"]=="0x9":
-            com=com.replace("arg", arg)
-            codee+=steps+com+"\n"
-            continue
+        com=com.replace("arg", arg)
         
-
-        thing=com.replace("aarg", '"'+arg+'"')
+        thing=com.replace("aarg", "\'"+arg+"\'")
         codee+=steps+thing+"\n"
 
     if debug:
