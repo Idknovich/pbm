@@ -18,7 +18,10 @@ listt={
         "0xb":"reg3=PBM_arg",
         "0xc":"reg3=input()",
 
-        "0xd":"exit()"
+        "0xd":"exit()",
+        "0xe":"reg3=[]",
+
+        "0xf"="PBM_arg.append(reg1)"
     }
 }
 
