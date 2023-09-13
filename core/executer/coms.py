@@ -18,14 +18,10 @@ listt={
         "0xb":"reg3=PBM_arg",
         "0xc":"reg3=input()",
 
-<<<<<<< HEAD
         "0xd":"exit()",
         "0xe":"reg3=[]",
 
         "0xf":"PBM_arg.append(reg3)"
-=======
-        "0xd":"exit()"
->>>>>>> 92f3d9876962829662e467222a0c9cd9d2c31bf3
     }
 }
 
