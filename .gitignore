@@ -1,4 +1,4 @@
 core/lexer.py~
 core/executer/executer.py~
 core/__pycache__
-./
+__pycache__
