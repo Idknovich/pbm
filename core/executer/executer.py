@@ -30,10 +30,14 @@ def execute(byte_code, debug=False):
             steps+=" "
             continue
 
+        
         com=com.replace("arg", arg)
         
         thing=com.replace("aarg", "\'"+arg+"\'")
         codee+=steps+thing+"\n"
+
+        if ":" in com:
+            steps+=" "
 
     if debug:
         print(codee)
