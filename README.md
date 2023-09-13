@@ -4,7 +4,7 @@
 ![Very cool PBM symbols](https://i.postimg.cc/bJ4CgPBk/38-20230912202930.png)
 # PBM (PyByteMachine)
 
-**PBM (PyByteMachine)** - это виртуальная машина для выполнения PBM байт-кода. В данный момент это прототип.
+**PBM (PyByteMachine)** - ввполняет свой же pbm байт код. В данный момент это прототип.
 
 ## Зачем?
 
@@ -26,7 +26,7 @@
 
 # PBM (PyByteMachine)
 
-**PBM (PyByteMachine)** is a virtual machine for executing PBM bytecode. It's currently prototype.
+**PBM (PyByteMachine)** Executer of self bytecode. It's currently prototype.
 
 ## Why?
 
