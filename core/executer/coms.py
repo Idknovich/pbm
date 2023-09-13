@@ -15,7 +15,10 @@ listt={
         "0x9":"PBM_arg=\"\"",
         "0xa":"PBM_arg=reg3",
 
-        "0xb":"reg3=PBM_arg"
+        "0xb":"reg3=PBM_arg",
+        "0xc":"reg3=input()",
+
+        "0xd":"exit()"
     }
 }
 
