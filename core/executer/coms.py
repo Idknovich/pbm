@@ -21,7 +21,7 @@ listt={
         "0xd":"exit()",
         "0xe":"reg3=[]",
 
-        "0xf"="PBM_arg.append(reg1)"
+        "0xf":"PBM_arg.append(reg3)"
     }
 }
 
