@@ -34,7 +34,7 @@ Why not?
 
 ## How to Use
 
-See the [*DOCS*](DOCS.md) file for guide.
+See the [*DOCS*](DOCS.md) file for guide(rus only).
 
 ## Authors
 

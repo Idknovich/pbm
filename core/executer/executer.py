@@ -6,6 +6,7 @@ def execute(byte_code, debug=False):
     reg1=""
     reg2=""
     reg3=""
+    is_loop=False
     #
     steps=""
     
@@ -15,13 +16,17 @@ def execute(byte_code, debug=False):
    
     for i in byte_code:#translate
         com=c[i["com"]]
-        if i["com"]=="0xff":
+        
+        if i["com"]=="0xfe":
+            is_loop=True
+        
+        elif i["com"]=="0xff":
             steps=steps[:-1]
             continue
         
         arg=i["params"].decode("utf-8")
 
-        if i["com"]=="0x8":
+        elif i["com"]=="0x8":
             
             if not arg[0]==b"\x01":
                 thing=com.replace("arg", "not")
@@ -39,6 +44,11 @@ def execute(byte_code, debug=False):
         if ":" in com:
             steps+=" "
 
+    if is_loop:
+        def temp_thing(n):
+            return " "+n
+        codee="while True\n"+map(temp_thing, codee)
+    
     if debug:
         print(codee)
         print("")
