@@ -6,5 +6,5 @@ except:
     
 
 if __name__=="__main__":
-    program=b"\xfe\x00\x012\x00\x022\x00\x07+\x00\x0612\x00\x04"
+    program=b""
     core.execute(program, True)

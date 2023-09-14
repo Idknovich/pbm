@@ -15,18 +15,21 @@ def execute(byte_code, debug=False):
     codee=""""""
    
     for i in byte_code:#translate
+
+        if i["com"]=="0xfd":
+            is_loop=True
+            continue
+        
         com=c[i["com"]]
         
-        if i["com"]=="0xfe":
-            is_loop=True
         
-        elif i["com"]=="0xff":
+        if i["com"]=="0xff":
             steps=steps[:-1]
             continue
         
         arg=i["params"].decode("utf-8")
 
-        elif i["com"]=="0x8":
+        if i["com"]=="0x8":
             
             if not arg[0]==b"\x01":
                 thing=com.replace("arg", "not")
@@ -45,10 +48,12 @@ def execute(byte_code, debug=False):
             steps+=" "
 
     if is_loop:
-        def temp_thing(n):
-            return " "+n
-        codee="while True\n"+map(temp_thing, codee)
-    
+        print(codee)
+        codde=""
+        for line in codee.split("\n"):
+            codde=codde+" "+line+"\n"
+        codee="while True:\n"+codde
+        
     if debug:
         print(codee)
         print("")
