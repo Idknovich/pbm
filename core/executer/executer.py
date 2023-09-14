@@ -6,7 +6,6 @@ def execute(byte_code, debug=False):
     reg1=""
     reg2=""
     reg3=""
-    is_loop=False
     #
     steps=""
     
@@ -15,10 +14,6 @@ def execute(byte_code, debug=False):
     codee=""""""
    
     for i in byte_code:#translate
-
-        if i["com"]=="0xfd":
-            is_loop=True
-            continue
         
         com=c[i["com"]]
         
@@ -47,12 +42,6 @@ def execute(byte_code, debug=False):
         if ":" in com:
             steps+=" "
 
-    if is_loop:
-        print(codee)
-        codde=""
-        for line in codee.split("\n"):
-            codde=codde+" "+line+"\n"
-        codee="while True:\n"+codde
         
     if debug:
         print(codee)

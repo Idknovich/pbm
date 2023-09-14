@@ -24,7 +24,8 @@ listt={
         "0xf":"PBM_arg.append(reg3)",
         "0x10":"for reg2 in PBM_arg:",
 
-        "0x11":"reg1=reg1+reg2"
+        "0x11":"reg1=reg1+reg2",
+        "0x12":"while True:"
     }
 }
 
