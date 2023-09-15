@@ -14,7 +14,7 @@ def execute(byte_code, debug=False):
     
     c=getb()
     byte_code=lex(byte_code)
-    codee=""""""
+    codee="import sys;sys.set_int_max_str_digits(10000000000)\n"
    
     for i in byte_code:#translate
         try:

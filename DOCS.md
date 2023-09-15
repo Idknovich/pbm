@@ -64,6 +64,12 @@ while True цикл
 
 ##0x14
 break для циклов
+
+##0x15
+Определяет функцию, аргумент название
+
+#0x16
+вызывает функцию, аргумент название
 ---
 
 # Documentation
@@ -126,3 +132,9 @@ Retrieves an item from the list into reg3, the argument is the item's index.
 
 ## 0x14
 break for cycles
+
+##0x15
+defines a command, arg is name
+
+##0x16
+executes the command, arg is name
