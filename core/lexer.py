@@ -1,5 +1,5 @@
 def lex(by: bytes):
-    
+
     by=by.split(b"\x00")
     fil=[]
     for byte in by:

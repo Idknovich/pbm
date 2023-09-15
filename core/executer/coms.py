@@ -27,7 +27,8 @@ listt={
         "0x11":"reg1=reg1+reg2",
         "0x12":"while True:",
 
-        "0x13":"reg2=reg3[arg]"
+        "0x13":"reg2=reg3[arg]",
+        "0x14":"break"
     }
 }
 
