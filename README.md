@@ -2,7 +2,8 @@
 
 
 ![Very cool PBM symbols](https://i.postimg.cc/bJ4CgPBk/38-20230912202930.png)
-# PBM (PyByteMachine)
+# PBM (PyByteMachine) 0.1
+
 
 **PBM (PyByteMachine)** - выполняет свой же pbm байт код. В данный момент это прототип.
 
