@@ -12,8 +12,9 @@
 
 ## Как использовать?
 
+скачайте pypy3 и
 Смотрите файл [*DOCS*](DOCS.md) для гайда
-
+вроде только на линукс работает
 ## Авторы
 
 - Idknovich (Дима Романов)- Создатель/Программист
@@ -34,7 +35,9 @@ Why not?
 
 ## How to Use
 
+download pypy3 and
 See the [*DOCS*](DOCS.md) file for guide.
+maybe it works only on linux
 
 ## Authors
 
