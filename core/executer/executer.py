@@ -1,11 +1,14 @@
 from ..lexer import lex
 from .coms import *
+from .pyexec import execute as exec2
 
 def execute(byte_code, debug=False):
     #setup
     reg1=""
     reg2=""
     reg3=""
+    
+    counter=0
     #
     steps=""
     
@@ -14,9 +17,12 @@ def execute(byte_code, debug=False):
     codee=""""""
    
     for i in byte_code:#translate
-        
-        com=c[i["com"]]
-        
+        try:
+            com=c[i["com"]]
+        except KeyError:
+            counter=str(counter)
+            print("invalid byte: "+i["com"]+" in "+counter+" byte")
+            exit()
         
         if i["com"]=="0xff":
             steps=steps[:-1]
@@ -37,14 +43,14 @@ def execute(byte_code, debug=False):
         com=com.replace("arg", arg)
         
         thing=com.replace("aarg", "\'"+arg+"\'")
-        codee+=steps+thing+"\n"
+        codee+=steps+thing+f"#{i['com']} {counter}"+"\n"
 
         if ":" in com:
             steps+=" "
-
+        counter+=1
         
     if debug:
         print(codee)
         print("")
     
-    exec(codee)
+    exec2(codee)

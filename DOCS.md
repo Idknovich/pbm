@@ -62,6 +62,9 @@ while True цикл
 ##0x13
 достает из списка который в reg3, в reg2, номер это аргумент
 
+##0x14
+break для циклов
+
 ---
 
 # Documentation
@@ -121,3 +124,6 @@ Infinite `while True` loop.
 
 ## 0x13
 Retrieves an item from the list into reg3, the argument is the item's index.
+
+## 0x14
+break for cycles
