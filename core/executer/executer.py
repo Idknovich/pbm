@@ -18,15 +18,15 @@ def execute(byte_code, debug=False):
    
     for i in byte_code:#translate
         try:
+            if i["com"]=="0xff":
+                steps=steps[:-1]
+                continue
             com=c[i["com"]]
         except KeyError:
             counter=str(counter)
             print("invalid byte: "+i["com"]+" in "+counter+" byte")
             exit()
         
-        if i["com"]=="0xff":
-            steps=steps[:-1]
-            continue
         
         arg=i["params"].decode("utf-8")
 
