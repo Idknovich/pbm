@@ -31,7 +31,9 @@ listt={
         "0x14":"break",
 
         "0x15":"def arg():",
-        "0x16":"arg()"
+        "0x16":"arg()",
+
+        "0x17":"import arg"
     }
 }
 

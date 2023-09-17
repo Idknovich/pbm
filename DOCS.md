@@ -68,8 +68,11 @@ break для циклов
 ##0x15
 Определяет функцию, аргумент название
 
-#0x16
+##0x16
 вызывает функцию, аргумент название
+
+##0x17
+импортирует библиотеку пайтон, аргумент название, библиотека должна быть в стиле генерированого кода
 ---
 
 # Documentation
@@ -138,3 +141,6 @@ defines a command, arg is name
 
 ##0x16
 executes the command, arg is name
+
+##0x17
+imports python liblary, arg is name, lib must be in tlanslated code by pbm style

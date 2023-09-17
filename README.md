@@ -14,7 +14,8 @@
 ## Как использовать?
 
 скачайте pypy3 и
-Смотрите файл [*DOCS*](DOCS.md) для гайда
+Смотрите файл [*DOCS*](DOCS.md) для гайда,
+
 вроде только на линукс работает
 ## Авторы
 
@@ -38,6 +39,7 @@ Why not?
 
 download pypy3 and
 See the [*DOCS*](DOCS.md) file for guide.
+
 maybe it works only on linux
 
 ## Authors
