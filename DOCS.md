@@ -72,7 +72,11 @@ break для циклов
 вызывает функцию, аргумент название
 
 ##0x17
-импортирует библиотеку пайтон, аргумент название, библиотека должна быть в стиле генерированого кода
+импортирует библиотеку пайтон, аргумент название, библиотека должна быть в стиле генерированого кода(поддерживаться)
+
+##0x18
+Вставляет в reg3, значения от 0, до аргумента
+
 ---
 
 # Documentation
@@ -143,4 +147,7 @@ defines a command, arg is name
 executes the command, arg is name
 
 ##0x17
-imports python liblary, arg is name, lib must be in tlanslated code by pbm style
+imports python liblary, arg is name, lib must be in tlanslated code by pbm style(suported)
+
+##0x18
+makes list in reg3 what started with 0, and ended arg
