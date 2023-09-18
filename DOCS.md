@@ -75,7 +75,7 @@ break для циклов
 импортирует библиотеку пайтон, аргумент название, библиотека должна быть в стиле генерированого кода(поддерживаться)
 
 ##0x18
-Вставляет в reg3, значения от 0, до аргумента
+Вставляет в reg3 range обьект, аргумент количество
 
 ---
 
@@ -150,4 +150,4 @@ executes the command, arg is name
 imports python liblary, arg is name, lib must be in tlanslated code by pbm style(suported)
 
 ##0x18
-makes list in reg3 what started with 0, and ended arg
+makes range object in reg3, arg is quantity

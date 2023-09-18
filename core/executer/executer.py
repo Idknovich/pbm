@@ -3,18 +3,14 @@ from .coms import *
 from .pyexec import execute as exec2
 
 def execute(byte_code, debug=False):
-    #setup
-    reg1=""
-    reg2=""
-    reg3=""
     
     counter=0
-    #
+
     steps=""
     
     c=getb()
     byte_code=lex(byte_code)
-    codee="import sys;sys.set_int_max_str_digits(10000000000)\n"
+    codee="import sys;sys.set_int_max_str_digits(10000000000)\nreg1=''\nreg2=''\nreg3=''\n"
    
     for i in byte_code:#translate
         try:

@@ -34,7 +34,7 @@ listt={
         "0x16":"arg()",
 
         "0x17":"import arg",
-        "0x18":"reg3=list(range(0, int(arg)))"
+        "0x18":"reg3=range(int(arg))"
     }
 }
 
