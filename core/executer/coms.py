@@ -38,7 +38,9 @@ listt={
         "0x18":"reg3=range(int(arg))",
         
         "0x19":"reg3=reg3.split(arg)",
-        "0x1a":"reg3.sort()"
+        "0x1a":"reg3.sort()",
+
+        "0x1b":"raise fatalpbm(arg)"
     }
 }
 

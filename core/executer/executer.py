@@ -11,6 +11,9 @@ def execute(byte_code, debug=False):
     c=getb()
     byte_code=lex(byte_code)
     codee="import sys;sys.set_int_max_str_digits(10000000000)\nreg1=''\nreg2=''\nreg3=''\n"
+    codee+="""class fatalpbm(Exception):
+    def __init__(why):
+        print('error: '+why)\n"""
    
     for i in byte_code:#translate
         try:

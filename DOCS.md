@@ -1,4 +1,4 @@
-#Документация
+#Документация(scroll down for english)
 Мы имеем 3 регистра, 0x00 обозначает новую комманду,это все что нужно покачто знать
 
 ##0x01-0x03
@@ -82,6 +82,9 @@ break для циклов
 
 ##0x1a
 Сортирует reg3
+
+##0x1b
+Вызывает ошибку, arg для указания причины
 ---
 
 # Documentation
@@ -162,3 +165,6 @@ splits reg3 using arg
 
 ##0x1a
 sorting reg3
+
+#0x1b
+raises error, arg is reason
