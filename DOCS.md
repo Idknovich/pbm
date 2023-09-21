@@ -77,6 +77,11 @@ break для циклов
 ##0x18
 Вставляет в reg3 range обьект, аргумент количество
 
+##0x19
+Разделяет reg3 используя arg
+
+##0x1a
+Сортирует reg3
 ---
 
 # Documentation
@@ -151,3 +156,9 @@ imports python liblary, arg is name, lib must be in tlanslated code by pbm style
 
 ##0x18
 makes range object in reg3, arg is quantity
+
+##0x19
+splits reg3 using arg
+
+##0x1a
+sorting reg3
