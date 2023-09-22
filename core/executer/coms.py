@@ -40,7 +40,8 @@ listt={
         "0x19":"reg3=reg3.split(arg)",
         "0x1a":"reg3.sort()",
 
-        "0x1b":"raise fatalpbm(arg)"
+        "0x1b":"raise fatalpbm(arg)",
+        "0x1c":"from time import sleep;sleep(arg);del sleep"
     }
 }
 
